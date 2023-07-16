@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8">basicEx04_문제.jsp
 <title>연습문제1</title>
 </head>
 <body>
