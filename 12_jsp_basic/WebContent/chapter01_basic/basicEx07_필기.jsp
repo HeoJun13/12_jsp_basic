@@ -1,6 +1,6 @@
+
 <%@page import="java.util.Random"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,11 +9,11 @@
 </head>
 <body>
 
+
 	<%
 		Random ran = new Random();
-	
-		int Ra = ran.nextInt(3);
-	
+		int ra = ran.nextInt(3);
+		
 		if (ra == 0) {
 	%>	
 		<select>
