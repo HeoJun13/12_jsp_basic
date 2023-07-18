@@ -24,9 +24,13 @@
 	--%>
 	
 	<%
+	
 		// 데이터베이스를 연결하기 위한 객체
 		Connection conn = null;	//java.sql.Connection
 		
+		try {
+	
+	
 		// forName 생성
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
@@ -39,9 +43,17 @@
 		
 		
 		// 데이터베이스 연동
-		conn = DriverManager.getConnection(" ", "root", "1234"); // java.sql.DriverManager
+		conn = DriverManager.getConnection(url, user, password); // java.sql.DriverManager
+		System.out.println("연결에 성공하였습니다");
 	
-	
+			
+		}	catch(Exception e){
+			e.printStackTrace();
+			System.out.println("연결에 실패하였습니다.");
+		} finally {
+			// 데이터베이스 연동 종료
+			conn.close();
+		}
 	%>
 
 </body>
