@@ -32,7 +32,6 @@
 		}
 		else if (ra == 2) {			
 	%>
-	
 		<input type="radio" name="rdoLan" value="html5">HTML5 &emsp;
 		<input type="radio" name="rdoLan" value="css5">CSS5 &emsp;
 		<input type="radio" name="rdoLan" value="javascript">JAVASCRIPT &emsp;
