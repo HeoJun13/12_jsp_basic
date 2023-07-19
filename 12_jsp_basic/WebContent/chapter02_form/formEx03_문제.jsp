@@ -33,8 +33,8 @@
 	<%
 		String com = "바위";
 	%>
-	<form action="formEx03pro.jsp" method="post">
-		가위 바위 보 : <input type="text" name="me" /> 
+	<form>
+		(가위 바위 보) 게임! : <input type="text" name="me" /> 
 		<input type="hidden" name="com" value="<%=com %>" /> 
 		<input type="submit" value="확인" />
 	</form>
