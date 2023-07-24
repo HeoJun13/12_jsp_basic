@@ -11,7 +11,7 @@
  <% 
  request.setCharacterEncoding("utf-8");
  
-  String me = reqest.get
+  String me = request.getParameter("");
  %>
 	
 

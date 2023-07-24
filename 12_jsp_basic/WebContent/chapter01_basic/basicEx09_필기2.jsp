@@ -40,7 +40,7 @@
 	
 		for (int j = 1; j <= day; j++) {
 	%>
-		 <option value=<%=i %>><%=i %></option>
+		 <option value=<%=j %>><%=j %></option>
 	<%
 	
 		}
