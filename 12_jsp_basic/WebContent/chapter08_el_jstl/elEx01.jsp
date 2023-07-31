@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +7,7 @@
 </head>
 <body>
 
-<%--   
+	<%--   
 	
 		# EL (Expression Language)
 		
@@ -45,34 +44,43 @@
 			${name} : request요청중에 name속성(생략가능)
 	
 	--%>
-	
+
 	<h3>서블렛 데이터 표기</h3>
 	<p>${name }</p>
 	<p>${num1 }</p>
 	<p>${num2 }</p>
 	<hr>
 	
-	<h3>산술연산자</h3>
-	<p>${num1 + num2 } </p>
-	<p>${num1 - num2 } </p>
-	<p>${num1 * num2 } </p>
-	<p>${num1 / num2 } , ${num1 div num2 } </p>
-	<p>${num1 % num2 } , ${num1 mod num2 } </p>
-	<hr>	
-
-	<h3>비교(관계) 연산자</h3>
-	<p>${num1 > num2   } , ${num1 gt num2  }</p>	<!-- Greater Than -->
-	<p>${num1 >= num2  } , ${num1 ge num2  }</p>	<!-- Greater Than or Equal to -->
-	<p>${num1 == num2  } , ${num1 eq num2  }</p>	<!-- Equal to -->
-	<p>${num1 < num2   } , ${num1 lt num2  }</p>	<!-- Less Than -->
-	<p>${num1 <= num2  } , ${num1 le num2  }</p>	<!-- Less Than or Equal to -->
-	<p>${num1 != num2  } , ${num1 ne num2  }</p>	<!-- not Equal -->
+	<h3>산술연산자</h3>	
+	<p>${num1 + num2 }</p>
+	<p>${num1 - num2 }</p>
+	<p>${num1 * num2 }</p>
+	<p>${num1 / num2 } , ${num1 div num2 }</p>
+	<p>${num1 % num2 } , ${num1 mod num2 }</p>
 	<hr>
 	
-	<h3>배열형 데이터 타입</h3>
-	<p>${list1 == null } , ${list1 != null }</p>
-	<p>${empty list2 } , ${not empty list2 }</p>
-	<p>${not empty list3} , ${empty list3 }</p>
+	<h3>비교(관계) 연산자</h3>
+	<p>${num1 > num2 }  , ${num1 gt num2 } </p> <!-- Greater Than -->
+	<p>${num1 >= num2 } , ${num1 ge num2 } </p> <!-- Greater than or Equal to -->
+	<p>${num1 < num2 }  , ${num1 lt num2 }</p>  <!-- Less Than -->
+	<p>${num1 <= num2 } , ${num1 le num2 }</p>  <!-- Less than or Equal to -->
+	<p>${num1 == num2 } , ${num1 eq num2 }</p>  <!-- EQual  -->
+	<p>${num1 != num2 } , ${num1 ne num2 }</p>  <!-- Not Equal  -->
+	<hr>
 	
+	<h3>논리 연산자</h3>
+	<p>${num1 > num2 && name == "Tim"} , ${num1 > num2 and name == "Tim"}</p>	
+	<p>${num1 > num2 || name != "Tim" } , ${num1 > num2 or name != "Tim" }</p>
+	<p>${!(name == "Tim")} , ${not(name == "Tim")}</p>
+	<hr>
+	
+	
+	<h3>배열형 데이터 타입</h3>
+	<p>${list1 == null }   , ${list1 != null }</p>
+	<p>${empty list2 }     , ${not empty list2 }</p>
+	<p>${not empty list3 } , ${empty list3 }</p>
+
 </body>
+
+
 </html>
