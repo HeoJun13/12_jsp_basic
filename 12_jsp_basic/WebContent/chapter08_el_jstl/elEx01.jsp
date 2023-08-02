@@ -74,7 +74,6 @@
 	<p>${!(name == "Tim")} , ${not(name == "Tim")}</p>
 	<hr>
 	
-	
 	<h3>배열형 데이터 타입</h3>
 	<p>${list1 == null }   , ${list1 != null }</p>
 	<p>${empty list2 }     , ${not empty list2 }</p>

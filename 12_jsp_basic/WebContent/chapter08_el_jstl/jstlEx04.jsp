@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt"  uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,16 +31,38 @@
 		parseDate       : 문자열을 날짜 형식으로 변환하여 출력
 
 	--%>
-	
+
 	<h3>데이터 형변환</h3>
 	<c:set var="num1" value="7"/>
 	<c:set var="num2" value="12"/>
-	
+
 	<fmt:parseNumber var="num1" value="${num1 }"/>
 	<fmt:parseNumber var="num2" value="${num2 }"/>
-	
+
 	<c:if test="${num1 < num2 }">
-		<p>${num2 }(이)가 크다</p>
+		<p>${num2 }(이)가 크다.</p>
 	</c:if>
+
+	<hr>
+	
+	<h3>날짜형식</h3>
+	<p>${now }</p>
+	<p><fmt:formatDate value="${now }"/></p>
+	<p><fmt:formatDate value="${now }"  pattern="yyyy-MM-dd"/></p>
+	<p><fmt:formatDate value="${now }"  pattern="yyyyMMdd"/></p>
+	<p><fmt:formatDate value="${now }"  pattern="yyyy년MM월dd일"/></p>
+	<hr>
+	
+	<h3>숫자형식</h3>
+	<p>${nData }</p>
+	<p><fmt:formatNumber value="${nData}"/></p>
+	<p><fmt:formatNumber value="${nData}" pattern=".0"></fmt:formatNumber></p>
+	<p><fmt:formatNumber value="${nData}" pattern=".00"></fmt:formatNumber></p>
+	<p><fmt:formatNumber value="${nData}" pattern=".000"></fmt:formatNumber></p>
+	
+	
+	
+
+
 </body>
 </html>
